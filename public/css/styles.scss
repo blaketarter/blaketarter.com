@@ -1,0 +1,111 @@
+/*
+ *  Normalize cause duh
+ */
+
+@import '_normalize.scss';
+
+/*
+ *  Variables
+ */
+
+$black: #333333;
+$white: #ecf0f1;
+$darkblue: #384F5F;
+$fadedblue: #687978;
+$neutral: #B8A480;
+$tan: #FCC68E;
+$orange: #F8A06A;
+
+$grass: '../img/grass.png';
+
+/*
+ *  General styles that I always add
+ */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+
+  &::selection {
+    background-color: transparentize($orange, 0.2);
+  }
+}
+
+html, body, .container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, Helvetica, Arial, 'sans-serif';
+  background-color: $white;
+  color: $black;
+  overflow-x: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+}
+
+/*
+ *  blaketarter.com styles
+ */
+.fold {
+  height: 100%;
+  width: 100%;
+
+  background-color: $darkblue;
+  color: $white;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+
+  background: url($grass) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .top {
+    margin: 50% auto;
+    transform: translateY(-50%);
+
+    width: 40%;
+    text-align: center;
+    color: $black;
+
+
+    .name {
+      font-size: 4.5em;
+      letter-spacing: 1.5;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    .subhead {
+      font-size: 3.5em;
+      font-weight: 300;
+      margin-top: 0;
+    }
+
+    &.stick {
+      position: fixed;
+      top: 0;
+      margin-top: 0;
+      transform: translateY(0);
+      width: 100%;
+
+      .name {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@supports (width: 100vw) {
+  .fold {
+    height: 100vh;
+    width: 100vw;
+  }
+}
