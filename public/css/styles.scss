@@ -5,7 +5,13 @@
 @import '_normalize.scss';
 
 /*
- *  Variables
+ *  Font Icons
+ */
+
+@import 'fontello-embedded.css';
+
+/*
+ *  Color Variables
  */
 
 $black: #333333;
@@ -16,7 +22,12 @@ $neutral: #B8A480;
 $tan: #FCC68E;
 $orange: #F8A06A;
 
+/*
+ *  Image Urls
+ */
+
 $grass: '../img/grass.png';
+$poly: '../img/poly.png';
 
 /*
  *  General styles that I always add
@@ -49,55 +60,184 @@ html, body, .container {
 }
 
 /*
+ *  utility ctyles
+ */
+
+.left {
+  text-align: left !important;
+
+  transition: 0.5s ease;
+}
+
+.center {
+  text-align: center !important;
+
+  transition: 0.5s ease;
+}
+
+.right {
+  text-align: right !important;
+
+  transition: 0.5s ease;
+}
+
+.ghost {
+  height: 50px;
+  border: 1px solid $black;
+  color: $black;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 0 15px;
+
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+
+    transition: 0.2s ease;
+  }
+
+  &:focus {}
+  outline-color: $tan;
+}
+
+/*
  *  blaketarter.com styles
  */
+
 .fold {
   height: 100%;
   width: 100%;
 
-  background-color: $darkblue;
-  color: $white;
-  position: absolute;
-  top: 0;
+  background-color: $white;
+  color: $black;
+//  position: absolute;
+//  top: 0;
   overflow: hidden;
 
-  background: url($grass) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  .logo {
+    background: url($poly) no-repeat center center;
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+  }
 
   .top {
-    margin: 50% auto;
-    transform: translateY(-50%);
-
-    width: 40%;
+    margin: 35% auto;
     text-align: center;
+    width: 60%;
     color: $black;
-
+    position: relative;
 
     .name {
-      font-size: 4.5em;
+      font-size: 6.5em;
       letter-spacing: 1.5;
       font-weight: 300;
       margin-bottom: 0;
+      text-align: center;
+      margin-top: 0;
+
+      transition: 0.2s ease;
+
+      .nav-toggle {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: $black;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        font-size: 25px;
+        top: 5px;
+        left: 15px;
+        line-height: 50px;
+        @extend .left;
+        padding-left: 7px;
+
+        transition: 0.2s ease;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $white;
+
+          transition: 0.2s ease;
+        }
+
+        &.out {
+          height: 400px;
+          width: 200px;
+
+          background-color: rgba(255, 255, 255, 0.8);
+
+          transition: 0.2s ease;
+        }
+      }
+
+      &.sticky {
+        font-size: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0 !important;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+//        padding-left: 75px;
+
+        transition: 0.2s ease;
+
+        .nav-toggle {
+          display: block;
+        }
+      }
     }
 
     .subhead {
-      font-size: 3.5em;
+      font-size: 4.5em;
       font-weight: 300;
       margin-top: 0;
+
+      .amp {
+        font-weight: 700;
+      }
     }
 
-    &.stick {
-      position: fixed;
-      top: 0;
-      margin-top: 0;
-      transform: translateY(0);
-      width: 100%;
+    .desc {
+      margin: 0 auto;
+      font-size: 3em;
+      font-weight: 200;
+    }
 
-      .name {
-        margin-top: 0;
+    .button-group {
+      margin-top: 50px;
+    }
+  }
+
+  .scroll {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    @extend .center;
+
+    .icon {
+      font-size: 25px;
+      background-color: transparent;
+      border-radius: 50%;
+
+      transition: 0.2s ease;
+
+      &:hover {
+        background-color: $black;
+        color: $white;
+        cursor: pointer;
+
+        transition: 0.2s ease;
       }
     }
   }
