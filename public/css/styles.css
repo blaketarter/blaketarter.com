@@ -489,11 +489,11 @@ body {
         .fold .top .name .nav-toggle.out {
           height: 400px;
           width: 200px;
-          background-color: rgba(255, 255, 255, 0.8);
+          background-color: white;
           transition: 0.2s ease; }
           .fold .top .name .nav-toggle.out:hover {
             cursor: initial;
-            background-color: rgba(255, 255, 255, 0.8); }
+            background-color: white; }
       .fold .top .name.sticky {
         font-size: 45px;
         position: fixed;

@@ -199,13 +199,13 @@ body {
           height: 400px;
           width: 200px;
 
-          background-color: rgba(255, 255, 255, 0.8);
+          background-color: white;
 
           transition: 0.2s ease;
 
           &:hover {
             cursor: initial;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: white;
           }
         }
       }
