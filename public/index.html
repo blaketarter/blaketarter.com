@@ -29,14 +29,22 @@
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 
 </head>
-<body>
-<div class="container" id="skrollr-body">
+<body id="skrollr-body">
+<div class="container">
     <div class="fold">
         <div data-0="top: -100px;" data-500="top:-200px;" class="logo"></div>
         <div class="top">
             <div id="sticky-anchor"></div>
             <h1 class="name">
-                <span class="nav-toggle icon icon-menu"></span>
+                <div class="nav-toggle icon icon-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item selected">Home</li>
+                        <li class="nav-item">About</li>
+                        <li class="nav-item">Work</li>
+                        <li class="nav-item">Playground</li>
+                        <li class="nav-item">Contact</li>
+                    </ul>
+                </div>
                 blaketarter
             </h1>
             <div data-0="opacity: 1; transform: translateY(0px);" data-100="opacity: 0; transform: translateY(-50px);">
@@ -53,7 +61,16 @@
         </div>
     </div>
     <div class="content">
-
+        <div class="nl" data-0="margin-top: 0px;" data-500="margin-top: -250px;">
+            <p class="quick-about">
+                Hi, Im <span class="highlight">Blake Tarter</span> and
+               I'm a web developer living in Kansas City, Missouri.
+                I have a deep love for <span class="highlight">development</span> and <span class="highlight">design</span>, especially the two
+                put together.
+                One of my passions is <span class="highlight">learning</span> new things.
+                If you want to know more about <a class="link" href="#">click here</a>.
+            </p>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="js/skrollr.min.js"></script>

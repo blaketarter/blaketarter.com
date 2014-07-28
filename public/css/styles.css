@@ -376,20 +376,13 @@ th {
     background-color: rgba(248, 160, 106, 0.8); }
 
 html, body, .container {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
   font-family: Roboto, Helvetica, Arial, 'sans-serif';
   background-color: #ecf0f1;
-  color: #333333;
-  overflow-x: hidden; }
+  color: #333333; }
 
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ecf0f1; }
+body {
+  overflow-x: hidden;
+  max-width: 100%; }
 
 /*
  *  utility ctyles
@@ -405,6 +398,16 @@ html, body, .container {
 .right {
   text-align: right !important;
   transition: 0.5s ease; }
+
+.highlight, .link {
+  padding: 5px;
+  background-color: #dde4e6; }
+
+.link {
+  color: #333333;
+  text-decoration: none; }
+  .link:hover {
+    background-color: #cfd9db; }
 
 .ghost {
   height: 50px;
@@ -466,16 +469,31 @@ html, body, .container {
         left: 15px;
         line-height: 50px;
         padding-left: 7px;
+        overflow: hidden;
         transition: 0.2s ease; }
         .fold .top .name .nav-toggle:hover {
           cursor: pointer;
           background-color: #ecf0f1;
           transition: 0.2s ease; }
+        .fold .top .name .nav-toggle .nav-list {
+          list-style: none;
+          padding-left: 0;
+          margin-left: -15px; }
+          .fold .top .name .nav-toggle .nav-list .nav-item {
+            padding-left: 15px; }
+            .fold .top .name .nav-toggle .nav-list .nav-item.selected {
+              background-color: #dde4e6; }
+            .fold .top .name .nav-toggle .nav-list .nav-item:hover {
+              cursor: pointer;
+              background-color: #ecf0f1; }
         .fold .top .name .nav-toggle.out {
           height: 400px;
           width: 200px;
           background-color: rgba(255, 255, 255, 0.8);
           transition: 0.2s ease; }
+          .fold .top .name .nav-toggle.out:hover {
+            cursor: initial;
+            background-color: rgba(255, 255, 255, 0.8); }
       .fold .top .name.sticky {
         font-size: 45px;
         position: fixed;
@@ -519,3 +537,13 @@ html, body, .container {
   .fold {
     height: 100vh;
     width: 100vw; } }
+.content {
+  height: 100%;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #333333; }
+  .content .nl {
+    margin: 50px auto;
+    width: 60%;
+    font-size: 2.5em;
+    font-weight: 300; }
