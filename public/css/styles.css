@@ -478,13 +478,13 @@ body {
   max-width: 100%; }
 
 /*
- *  utility ctyles
+ *  utility styles
  */
 .left, .fold .top .name .nav-toggle {
   text-align: left !important;
   transition: 0.5s ease; }
 
-.center, .fold .scroll {
+.center, .scroll, .content .examples .section-title {
   text-align: center !important;
   transition: 0.5s ease; }
 
@@ -515,6 +515,36 @@ body {
     background-color: #333333;
     color: #ecf0f1;
     transition: 0.2s ease; }
+
+.card {
+  display: inline-block;
+  width: 250px;
+  overflow: hidden;
+  background-color: #dde4e6;
+  border-radius: 2px;
+  min-width: 150px;
+  max-width: 350px; }
+  .card:hover {
+    cursor: pointer;
+    background-color: #cfd9db; }
+  .card .descr {
+    padding: 15px; }
+
+.scroll {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%; }
+  .scroll .icon {
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.2s ease; }
+    .scroll .icon:hover {
+      background-color: #333333;
+      color: #ecf0f1;
+      cursor: pointer;
+      transition: 0.2s ease; }
 
 /*
  *  blaketarter.com styles
@@ -549,6 +579,7 @@ body {
       margin-bottom: 0;
       text-align: center;
       margin-top: 0;
+      z-index: 5;
       transition: 0.2s ease; }
       .fold .top .name .nav-toggle {
         display: none;
@@ -610,21 +641,6 @@ body {
       font-weight: 200; }
     .fold .top .button-group {
       margin-top: 50px; }
-  .fold .scroll {
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    width: 100%; }
-    .fold .scroll .icon {
-      font-size: 25px;
-      background-color: transparent;
-      border-radius: 50%;
-      transition: 0.2s ease; }
-      .fold .scroll .icon:hover {
-        background-color: #333333;
-        color: #ecf0f1;
-        cursor: pointer;
-        transition: 0.2s ease; }
 
 @supports (width: 100vw) {
   .fold {
@@ -640,4 +656,20 @@ body {
     width: 60%;
     font-size: 2.5em;
     font-weight: 300;
-    line-height: 1.5; }
+    line-height: 1.7;
+    position: relative; }
+    .content .nl .scroll {
+      bottom: -115px; }
+  .content .examples {
+    display: flex;
+    flex-wrap: wrap; }
+    .content .examples .section-title {
+      width: 100%;
+      font-size: 3em;
+      font-weight: 300; }
+    .content .examples .card {
+      flex: 1;
+      margin: 15px; }
+      .content .examples .card .thumb {
+        width: 100%;
+        height: auto; }

@@ -34,8 +34,18 @@ $(document).ready(function() {
     });
 
     $('.scroll').click(function() {
+        var to = $(this).data('to') || '';
+
+        var offset = 0;
+
+        if ('.content' === to) {
+            offset = 350;
+        } else if ('.examples' === to) {
+            offset = 200;
+        }
+
         $('html, body').animate({
-            scrollTop: $('.content').offset().top
+            scrollTop: $(to).offset().top - offset
         }, 1000);
     });
 
