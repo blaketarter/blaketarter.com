@@ -25,6 +25,10 @@ $(document).ready(function() {
         }
     });
 
+    $('.lazy').show().lazyload({
+        effect: 'fadeIn'
+    });
+
     s.refresh();
 
     $(window).scroll(sticky_relocate);

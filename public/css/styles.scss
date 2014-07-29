@@ -156,6 +156,10 @@ body {
   }
 }
 
+.lazy {
+  display: none;
+}
+
 /*
  *  blaketarter.com styles
  */
@@ -330,6 +334,9 @@ body {
   .examples {
     display: flex;
     flex-wrap: wrap;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 
     .section-title {
       width: 100%;
