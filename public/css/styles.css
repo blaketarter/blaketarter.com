@@ -661,8 +661,15 @@ body {
     font-weight: 300;
     line-height: 1.7;
     position: relative; }
-    .content .nl .scroll {
+    .content .nl div.scroll {
       bottom: -115px; }
+    .content .nl span.scroll {
+      display: inline;
+      position: relative;
+      width: auto;
+      bottom: 0; }
+      .content .nl span.scroll:hover {
+        cursor: pointer; }
   .content .examples {
     display: flex;
     flex-wrap: wrap;

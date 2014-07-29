@@ -326,8 +326,19 @@ body {
     line-height: 1.7;
     position: relative;
 
-    .scroll {
+    div.scroll {
       bottom: -115px;
+    }
+
+    span.scroll {
+      display: inline;
+      position: relative;
+      width: auto;
+      bottom: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
