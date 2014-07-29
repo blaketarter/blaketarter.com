@@ -25,37 +25,59 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css"/>
 
-    <!-- Latest compiled and minified jQuery -->
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <!-- Modernizr -->
     <script src="js/modernizr.custom.30080.js"></script>
 
 </head>
-<body id="skrollr-body">
-<div class="container">
+<body>
+<div  id="skrollr-body" class="container">
     <div class="fold">
         <div data-0="top: -100px;" data-500="top:-200px;" class="logo"></div>
         <div class="top">
             <div id="sticky-anchor"></div>
             <h1 class="name">
-                <div class="nav-toggle icon icon-menu">
-                    <ul class="nav-list">
-                        <li class="nav-item selected">Home</li>
-                        <li class="nav-item">About</li>
-                        <li class="nav-item">Work</li>
-                        <li class="nav-item">Playground</li>
-                        <li class="nav-item">Contact</li>
-                    </ul>
-                </div>
+                <!--<div class="nav-toggle icon icon-menu">-->
+                    <!--<ul class="nav-list">-->
+                        <!--<li class="nav-item selected">Home</li>-->
+                        <!--<li class="nav-item">About</li>-->
+                        <!--<li class="nav-item">Work</li>-->
+                        <!--<li class="nav-item">Playground</li>-->
+                        <!--<li class="nav-item">Contact</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
                 blaketarter
             </h1>
             <div data-0="opacity: 1; transform: translateY(0px);" data-100="opacity: 0; transform: translateY(-50px);">
                 <h2 class="subhead">pixel <span class="amp">&amp;</span> code</h2>
                 <h3 class="desc">I design and code pretty things on the web.</h3>
                 <div class="button-group">
-                    <button class="ghost"><i class="icon icon-codepen"></i>Codepen</button>
-                    <button class="ghost"><i class="icon icon-comment"></i>Contact Me</button>
+                    <a href="http://www.codepen.io/blaketarter/" target="_blank" class="ghost link"><i class="icon icon-codepen"></i>Codepen</a>
+                    <!--<a class="ghost link" href="mailto:blakertarter@gmail.com" target="_blank"><i class="icon icon-comment"></i>Contact Me</a>-->
+
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        <!--
+                        var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+                                "x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+                                " r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!11)7t{yrx{=+;x+ll" +
+                                "=};acct(h)e}{f}roi(l=1-i;=>;0-i)-o{=+.xhcratAi(;)r}teru n.oussbrt0(o,)l};(f" +
+                                ")\\\"74\\\\,}\\\"7u17\\\\\\\\`j4/03\\\\\\\\bM03\\\\0]\\\\24\\\\06\\\\00\\\\" +
+                                "\\\\\\\\\\\\\\\\\\\\7u02\\\\\\\\VBGU\\\\\\\\\\\\\\\\s^21\\\\0G\\\\02\\\\00\\"+
+                                "\\02\\\\\\\\25\\\\00\\\\01\\\\\\\\\\\\u\\\\\\\\I\\\\HCLI4A01\\\\\\\\pNt}u<z" +
+                                "u5q(J`g}s/s1g)2bVffgj![<^3t03\\\\\\\\32\\\\06\\\\01\\\\\\\\32\\\\06\\\\01\\" +
+                                "\\\\\\ZY3+03\\\\\\\\32\\\\07\\\\02\\\\\\\\6]03\\\\\\\\30\\\\01\\\\02\\\\\\\\"+
+                                "02\\\\0t\\\\\\\\\\\\6-03\\\\\\\\16\\\\06\\\\03\\\\\\\\33\\\\0t\\\\\\\\\\\\2" +
+                                "3\\\\04\\\\02\\\\\\\\00\\\\07\\\\01\\\\\\\\02\\\\06\\\\01\\\\\\\\03\\\\0Z\\" +
+                                "\\`077\\\\1{\\\\}pR-j0xn(aZ%jnnjt!\\\\r2\\\\02\\\\\\\\24\\\\04\\\\03\\\\\\\\"+
+                                "%X4E00\\\\\\\\05\\\\04\\\\02\\\\\\\\30\\\\00\\\\02\\\\\\\\0R02\\\\\\\\OLMNK" +
+                                "LIJGHEFCDAB7@17\\\\\\\\}~y|7r24\\\"\\\\\\\\\\\\&<|$>%#*/8.$\\\"\\\\f(;} orn" +
+                                "ture;}))++(y)^(iAtdeCoarchx.e(odrChamCro.fngriSt+=;o27=1y%i;+=)y74==(iif){+" +
+                                "+;i<l;i=0(ior;fthnglex.l=\\\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"  ;
+                        while(x=eval(x));
+                        //-->
+                        //]]>
+                    </script>
+
                 </div>
             </div>
         </div>
@@ -71,7 +93,9 @@
                 I have a deep love for <span class="highlight">development</span> and <span class="highlight">design</span>, especially the two
                 put together.
                 One of my passions is <span class="highlight">learning</span> new things.
-                If you want to know more about me <a class="link" href="#">click here</a>.
+                If you want to know more about me
+                then have a little patience, the rest of this site is on the way!
+                <!--<a class="link" href="#">click here</a>.-->
             </p>
 
             <div class="scroll" data-to=".examples" data-500="opacity: 1;" data-1000="opacity: 0;">
@@ -80,53 +104,54 @@
         </div>
         <div class="examples" data-0="transform: translateY(500px);" data-1000="transform: translateY(0px);">
             <h4 class="section-title">Examples of Work</h4>
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum.</p>
+
+            <div class="card"  data-to="http://briefca.se">
+                <img class="thumb lazy" data-original="img/bc.PNG" alt="Briefcase 2.0"/>
+                <noscript><img class="thumb" src="img/bc.PNG" alt="Briefcase 2.0"/></noscript>
+                <p class="descr">I developed and aided in design of version 2.0 of briefcase's responsive application.</p>
             </div>
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est excepturi, officia!</p>
+            <div class="card" data-to="http://http://codepen.io/blaketarter/blog/sarcasm-i-like-to-fancy-myself-a-clever-man-sarcasm">
+                <img class="thumb lazy" data-original="img/jstest.PNG" alt="#"/>
+                <noscript><img class="thumb" src="img/jstest.PNG" alt="#"/></noscript>
+                <p class="descr">A collection of tests useful for showcasing Javascript to beginners.</p>
             </div>
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor.</p>
+            <div class="card"  data-to="http://codepen.io/blaketarter/pen/grGul">
+                <img class="thumb lazy" data-original="img/nlform.PNG" alt="#"/>
+                <noscript><img class="thumb" src="img/nlform.PNG" alt="#"/></noscript>
+                <p class="descr">A neat design pattern called natural language forms.</p>
             </div>
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur.</p>
+            <div class="card"  data-to="http://codepen.io/blaketarter/pen/rlovj">
+                <img class="thumb lazy" data-original="img/screensize.PNG" alt="#"/>
+                <noscript><img class="thumb" src="img/screensize.PNG" alt="#"/></noscript>
+                <p class="descr">A little experiement that livesearches through phones.</p>
             </div>
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum.</p>
-            </div>
+            <!--<div class="card">-->
+                <!--<img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>-->
+                <!--<noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>-->
+                <!--<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum.</p>-->
+            <!--</div>-->
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est excepturi, officia!</p>
-            </div>
+            <!--<div class="card">-->
+                <!--<img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>-->
+                <!--<noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>-->
+                <!--<p class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est excepturi, officia!</p>-->
+            <!--</div>-->
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor.</p>
-            </div>
+            <!--<div class="card">-->
+                <!--<img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>-->
+                <!--<noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>-->
+                <!--<p class="descr">Lorem ipsum dolor.</p>-->
+            <!--</div>-->
 
-            <div class="card">
-                <img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>
-                <noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>
-                <p class="descr">Lorem ipsum dolor sit amet, consectetur.</p>
-            </div>
+            <!--<div class="card">-->
+                <!--<img class="thumb lazy" data-original="http://placehold.it/150x150" alt="#"/>-->
+                <!--<noscript><img class="thumb" src="http://placehold.it/150x150" alt="#"/></noscript>-->
+                <!--<p class="descr">Lorem ipsum dolor sit amet, consectetur.</p>-->
+            <!--</div>-->
         </div>
 
         <div class="nl" data-0="margin-top: 0px;" data-1000="margin-top: 250px;">
@@ -137,6 +162,7 @@
         </div>
     </div>
 </div>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>

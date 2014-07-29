@@ -25,6 +25,13 @@ $(document).ready(function() {
         }
     });
 
+    var is_mobile = 0;
+
+
+    if ($('html').hasClass('skrollr-mobile')) {
+        is_mobile = 1;
+    }
+
     $('.lazy').show().lazyload({
         effect: 'fadeIn'
     });
@@ -35,7 +42,7 @@ $(document).ready(function() {
 
     $('.top').css({
         marginTop: center_top()
-    });
+    }).fadeIn('500');
 
     $('.scroll').click(function() {
         var to = $(this).data('to') || '';
@@ -57,5 +64,15 @@ $(document).ready(function() {
         $(this).toggleClass('out');
     });
 
+    $('.card').click(function() {
+        if ($(this).data('to')) {
+            var win = window.open($(this).data('to'), '_blank');
+        }
+    });
+
     sticky_relocate();
+
+    if (is_mobile) {
+        $('body').addClass('wip');
+    }
 });

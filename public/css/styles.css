@@ -511,6 +511,10 @@ body {
   padding: 0 15px;
   transition: 0.2s ease;
   outline-color: #fcc68e; }
+  .ghost.link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px; }
   .ghost:hover {
     background-color: #333333;
     color: #ecf0f1;
@@ -574,7 +578,8 @@ body {
     text-align: center;
     width: 60%;
     color: #333333;
-    position: relative; }
+    position: relative;
+    display: none; }
     .fold .top .name {
       font-size: 6.5em;
       letter-spacing: 1.5;
@@ -686,3 +691,28 @@ body {
       .content .examples .card .thumb {
         width: 100%;
         height: auto; }
+
+/*
+ *  Overwrites and stuff
+ */
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 3.5em !important; }
+
+  .subhead, .desc {
+    font-size: 2.5em !important; }
+
+  .nl {
+    font-size: 2em !important; } }
+body.wip:before {
+  content: 'Coming Soon';
+  background-color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 200px;
+  z-index: 1000;
+  font-size: 3em; }

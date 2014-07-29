@@ -95,6 +95,12 @@ body {
   border-radius: 2px;
   padding: 0 15px;
 
+  &.link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+  }
+
   transition: 0.2s ease;
 
   &:hover {
@@ -193,6 +199,8 @@ body {
     width: 60%;
     color: $black;
     position: relative;
+
+    display: none;
 
     .name {
       font-size: 6.5em;
@@ -365,5 +373,41 @@ body {
         height: auto;
       }
     }
+  }
+}
+
+
+
+/*
+ *  Overwrites and stuff
+ */
+
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 3.5em !important;
+  }
+
+  .subhead, .desc {
+    font-size: 2.5em !important;
+  }
+
+  .nl {
+    font-size: 2em !important;
+  }
+}
+
+body.wip {
+  &:before {
+    content: 'Coming Soon';
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 200px;
+    z-index: 1000;
+    font-size: 3em;
   }
 }
