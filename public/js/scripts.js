@@ -67,12 +67,18 @@ $(document).ready(function() {
     $('.card').click(function() {
         if ($(this).data('to')) {
             var win = window.open($(this).data('to'), '_blank');
+        } else {
+            $('body').addClass('no-scroll');
         }
+    });
+
+    $('body').on('click', '.featherlight-close', function() {
+        $('body').removeClass('no-scroll');
     });
 
     sticky_relocate();
 
-    if (is_mobile) {
-        $('body').addClass('wip');
-    }
+//    if (is_mobile) {
+//        $('body').addClass('wip');
+//    }
 });

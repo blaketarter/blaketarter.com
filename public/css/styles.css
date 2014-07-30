@@ -484,7 +484,7 @@ body {
   text-align: left !important;
   transition: 0.5s ease; }
 
-.center, .scroll, .content .examples .section-title {
+.center, .scroll, .section-title, .content .social {
   text-align: center !important;
   transition: 0.5s ease; }
 
@@ -552,6 +552,14 @@ body {
 
 .lazy {
   display: none; }
+
+body.no-scroll {
+  overflow: hidden; }
+
+.section-title {
+  width: 100%;
+  font-size: 3em;
+  font-weight: 300; }
 
 /*
  *  blaketarter.com styles
@@ -680,17 +688,41 @@ body {
     flex-wrap: wrap;
     width: 60%;
     margin-left: auto;
-    margin-right: auto; }
-    .content .examples .section-title {
-      width: 100%;
-      font-size: 3em;
-      font-weight: 300; }
+    margin-right: auto;
+    justify-content: center; }
     .content .examples .card {
       flex: 1;
       margin: 15px; }
       .content .examples .card .thumb {
         width: 100%;
         height: auto; }
+  .content .social {
+    width: 60%;
+    margin: 100px auto; }
+    .content .social .icon {
+      font-size: 3.5em;
+      color: #333333;
+      text-decoration: none; }
+      .content .social .icon:hover {
+        color: #384f5f;
+        cursor: pointer; }
+
+/*
+ *  featherlight styles
+ */
+.lightbox {
+  display: none; }
+
+.featherlight .featherlight-content {
+  width: 80%;
+  max-width: 1024px; }
+  @media screen and (max-width: 1024px) {
+    .featherlight .featherlight-content {
+      padding: 0;
+      border: 0; } }
+  @media screen and (max-width: 650px) {
+    .featherlight .featherlight-content {
+      width: 95%; } }
 
 /*
  *  Overwrites and stuff
