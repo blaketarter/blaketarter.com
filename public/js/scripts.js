@@ -18,12 +18,23 @@ $(document).ready(function() {
             var remove = $('.name').removeClass('sticky');
         }
     }
+//
+//    var s = skrollr.init({
+//        render: function(data) {
+//            sticky_relocate();
+//        }
+//    });
 
-    var s = skrollr.init({
-        render: function(data) {
-            sticky_relocate();
-        }
-    });
+    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        var s = skrollr.init({
+            forceHeight: false,
+            render: function(data) {
+                sticky_relocate();
+            }
+        });
+
+        s.refresh();
+    }
 
     var is_mobile = 0;
 
@@ -35,8 +46,6 @@ $(document).ready(function() {
     $('.lazy').show().lazyload({
         effect: 'fadeIn'
     });
-
-    s.refresh();
 
     $(window).scroll(sticky_relocate);
 

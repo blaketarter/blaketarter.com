@@ -509,8 +509,7 @@ body {
   background-color: transparent;
   border-radius: 2px;
   padding: 0 15px;
-  transition: 0.2s ease;
-  outline-color: #fcc68e; }
+  transition: 0.2s ease; }
   .ghost.link {
     display: inline-block;
     text-decoration: none;
@@ -519,6 +518,12 @@ body {
     background-color: #333333;
     color: #ecf0f1;
     transition: 0.2s ease; }
+  .ghost:focus {
+    outline-color: #fcc68e; }
+  @media screen and (max-width: 768px) {
+    .ghost {
+      width: 100%;
+      margin-bottom: 15px; } }
 
 .card {
   display: inline-block;
@@ -645,6 +650,9 @@ body.no-scroll {
         transition: 0.2s ease; }
         .fold .top .name.sticky .nav-toggle {
           display: block; }
+      @media screen and (max-width: 768px) {
+        .fold .top .name.sticky {
+          background-color: rgba(255, 255, 255, 0.9); } }
     .fold .top .subhead {
       font-size: 4.5em;
       font-weight: 300;
@@ -657,6 +665,9 @@ body.no-scroll {
       font-weight: 200; }
     .fold .top .button-group {
       margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .fold .top {
+        width: 95%; } }
 
 @supports (width: 100vw) {
   .fold {
@@ -676,6 +687,9 @@ body.no-scroll {
     position: relative; }
     .content .nl div.scroll {
       bottom: -115px; }
+      @media screen and (max-width: 768px) {
+        .content .nl div.scroll {
+          bottom: -50px; } }
     .content .nl span.scroll {
       display: inline;
       position: relative;
@@ -683,6 +697,10 @@ body.no-scroll {
       bottom: 0; }
       .content .nl span.scroll:hover {
         cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .content .nl {
+        width: 90%;
+        font-size: 1.5em !important; } }
   .content .examples {
     display: flex;
     flex-wrap: wrap;
@@ -696,6 +714,9 @@ body.no-scroll {
       .content .examples .card .thumb {
         width: 100%;
         height: auto; }
+    @media screen and (max-width: 768px) {
+      .content .examples {
+        width: 95%; } }
   .content .social {
     width: 60%;
     margin: 100px auto; }
@@ -713,16 +734,19 @@ body.no-scroll {
 .lightbox {
   display: none; }
 
-.featherlight .featherlight-content {
-  width: 80%;
-  max-width: 1024px; }
-  @media screen and (max-width: 1024px) {
-    .featherlight .featherlight-content {
-      padding: 0;
-      border: 0; } }
-  @media screen and (max-width: 650px) {
-    .featherlight .featherlight-content {
-      width: 95%; } }
+.featherlight {
+  z-index: 6;
+  padding-top: 75px; }
+  .featherlight .featherlight-content {
+    width: 80%;
+    max-width: 1024px; }
+    @media screen and (max-width: 1024px) {
+      .featherlight .featherlight-content {
+        padding: 0;
+        border: 0; } }
+    @media screen and (max-width: 650px) {
+      .featherlight .featherlight-content {
+        width: 95%; } }
 
 /*
  *  Overwrites and stuff

@@ -110,8 +110,15 @@ body {
     transition: 0.2s ease;
   }
 
-  &:focus {}
-  outline-color: $tan;
+  &:focus {
+    outline-color: $tan;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
 }
 
 .card {
@@ -297,6 +304,12 @@ body.no-scroll {
           display: block;
         }
       }
+      
+      @media screen and (max-width: 768px) {
+        &.sticky {
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+      }
     }
 
     .subhead {
@@ -317,6 +330,10 @@ body.no-scroll {
 
     .button-group {
       margin-top: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 95%;
     }
   }
 }
@@ -347,6 +364,10 @@ body.no-scroll {
 
     div.scroll {
       bottom: -115px;
+      
+      @media screen and (max-width: 768px) {
+        bottom: -50px;
+      }
     }
 
     span.scroll {
@@ -358,6 +379,11 @@ body.no-scroll {
       &:hover {
         cursor: pointer;
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      font-size: 1.5em !important;
     }
   }
 
@@ -377,6 +403,10 @@ body.no-scroll {
         width: 100%;
         height: auto;
       }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 95%;
     }
   }
 
@@ -408,6 +438,8 @@ body.no-scroll {
 }
 
 .featherlight {
+  z-index: 6;
+  padding-top: 75px;
   .featherlight-content {
     width: 80%;
     max-width: 1024px;
