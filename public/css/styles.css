@@ -593,8 +593,6 @@ body.no-scroll {
     color: #333333;
     position: relative;
     display: none; }
-    .fold .top.stuck {
-      padding-top: 75px; }
     .fold .top .name {
       font-size: 6.5em;
       letter-spacing: 1.5;
@@ -728,6 +726,23 @@ body.no-scroll {
       .content .social .icon:hover {
         color: #384f5f;
         cursor: pointer; }
+
+/*
+ *  Contact Form
+ */
+.contact-form {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ecf0f1;
+  transform: translateX(9999px);
+  transition: 1s ease; }
+  .contact-form.active {
+    z-index: 10;
+    transform: translateX(0px); }
 
 /*
  *  featherlight styles

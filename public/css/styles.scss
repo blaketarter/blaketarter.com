@@ -220,9 +220,9 @@ body.no-scroll {
 
     display: none;
 
-    &.stuck {
-      padding-top: 75px;
-    }
+//    &.stuck {
+//      padding-top: 75px;
+//    }
 
     .name {
       font-size: 6.5em;
@@ -428,6 +428,31 @@ body.no-scroll {
         cursor: pointer;
       }
     }
+  }
+}
+
+/*
+ *  Contact Form
+ */
+
+.contact-form {
+  position: fixed;
+
+  height: 100%;
+  width: 100%;
+
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  background-color: $white;
+  transform: translateX(9999px);
+
+  transition: 1s ease;
+
+  &.active {
+    z-index: 10;
+    transform: translateX(0px);
   }
 }
 

@@ -87,6 +87,10 @@ $(document).ready(function() {
         $('body').removeClass('no-scroll');
     });
 
+    $('.contact').click(function() {
+        $('.contact-form').addClass('active');
+    });
+
     sticky_relocate();
 
 //    if (is_mobile) {
