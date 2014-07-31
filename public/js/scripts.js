@@ -12,10 +12,12 @@ $(document).ready(function() {
         var window_top = $(window).scrollTop();
         var div_top = $('#sticky-anchor').offset().top;
         if (window_top > div_top) {
-            var add = $('.name').addClass('sticky');
+            $('.name').addClass('sticky');
+            $('.top').addClass('stuck');
         }
         else {
-            var remove = $('.name').removeClass('sticky');
+            $('.name').removeClass('sticky');
+            $('.top').removeClass('stuck');
         }
     }
 //

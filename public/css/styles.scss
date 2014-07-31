@@ -220,6 +220,10 @@ body.no-scroll {
 
     display: none;
 
+    &.stuck {
+      padding-top: 75px;
+    }
+
     .name {
       font-size: 6.5em;
       letter-spacing: 1.5;
@@ -307,7 +311,7 @@ body.no-scroll {
       
       @media screen and (max-width: 768px) {
         &.sticky {
-          background-color: rgba(255, 255, 255, 0.9);
+          background-color: rgba(255, 255, 255, 1);
         }
       }
     }
@@ -411,7 +415,6 @@ body.no-scroll {
   }
 
   .social {
-    width: 60%;
     margin: 100px auto;
     @extend .center;
 

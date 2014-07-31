@@ -593,6 +593,8 @@ body.no-scroll {
     color: #333333;
     position: relative;
     display: none; }
+    .fold .top.stuck {
+      padding-top: 75px; }
     .fold .top .name {
       font-size: 6.5em;
       letter-spacing: 1.5;
@@ -652,7 +654,7 @@ body.no-scroll {
           display: block; }
       @media screen and (max-width: 768px) {
         .fold .top .name.sticky {
-          background-color: rgba(255, 255, 255, 0.9); } }
+          background-color: white; } }
     .fold .top .subhead {
       font-size: 4.5em;
       font-weight: 300;
@@ -718,7 +720,6 @@ body.no-scroll {
       .content .examples {
         width: 95%; } }
   .content .social {
-    width: 60%;
     margin: 100px auto; }
     .content .social .icon {
       font-size: 3.5em;
