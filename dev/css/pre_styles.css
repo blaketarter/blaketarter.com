@@ -1,0 +1,1053 @@
+@charset "IBM437";
+/*
+ *  Normalize cause duh
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../scss/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 43, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, ../scss/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 76, ../scss/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../scss/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, ../scss/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 116, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../scss/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, ../scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, ../scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../scss/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../scss/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../scss/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 254, ../scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, ../scss/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, ../scss/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, ../scss/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../scss/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, ../scss/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../scss/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../scss/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 423, ../scss/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*
+ *  Font Icons
+ */
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?47891540");
+  src: url("../font/fontello.eot?47891540#iefix") format("embedded-opentype"), url("../font/fontello.svg?47891540#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("data:application/octet-stream;base64,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") format("woff"), url("data:application/octet-stream;base64,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FiAgILAFJiAuRyNHI2EjPDgtsDMssAAWILAII0IgICBGI0ewACsjYTgtsDQssAAWsAMlsAIlRyNHI2GwAFRYLiA8IyEbsAIlsAIlRyNHI2EgsAUlsAQlRyNHI2GwBiWwBSVJsAIlYbABRWMjIFhiGyFZY7ABRWJgIy4jICA8ijgjIVktsDUssAAWILAIQyAuRyNHI2EgYLAgYGawgGIjICA8ijgtsDYsIyAuRrACJUZSWCA8WS6xJgEUKy2wNywjIC5GsAIlRlBYIDxZLrEmARQrLbA4LCMgLkawAiVGUlggPFkjIC5GsAIlRlBYIDxZLrEmARQrLbA5LLAwKyMgLkawAiVGUlggPFkusSYBFCstsDossDEriiAgPLAEI0KKOCMgLkawAiVGUlggPFkusSYBFCuwBEMusCYrLbA7LLAAFrAEJbAEJiAuRyNHI2GwBkUrIyA8IC4jOLEmARQrLbA8LLEIBCVCsAAWsAQlsAQlIC5HI0cjYSCwBCNCsAZFKyCwYFBYILBAUVizAiADIBuzAiYDGllCQiMgR7AEQ7CAYmAgsAArIIqKYSCwAkNgZCOwA0NhZFBYsAJDYRuwA0NgWbADJbCAYmGwAiVGYTgjIDwjOBshICBGI0ewACsjYTghWbEmARQrLbA9LLAwKy6xJgEUKy2wPiywMSshIyAgPLAEI0IjOLEmARQrsARDLrAmKy2wPyywABUgR7AAI0KyAAEBFRQTLrAsKi2wQCywABUgR7AAI0KyAAEBFRQTLrAsKi2wQSyxAAEUE7AtKi2wQiywLyotsEMssAAWRSMgLiBGiiNhOLEmARQrLbBELLAII0KwQystsEUssgAAPCstsEYssgABPCstsEcssgEAPCstsEgssgEBPCstsEkssgAAPSstsEossgABPSstsEsssgEAPSstsEwssgEBPSstsE0ssgAAOSstsE4ssgABOSstsE8ssgEAOSstsFAssgEBOSstsFEssgAAOystsFIssgABOystsFMssgEAOystsFQssgEBOystsFUssgAAPistsFYssgABPistsFcssgEAPistsFgssgEBPistsFkssgAAOistsFossgABOistsFsssgEAOistsFwssgEBOistsF0ssDIrLrEmARQrLbBeLLAyK7A2Ky2wXyywMiuwNystsGAssAAWsDIrsDgrLbBhLLAzKy6xJgEUKy2wYiywMyuwNistsGMssDMrsDcrLbBkLLAzK7A4Ky2wZSywNCsusSYBFCstsGYssDQrsDYrLbBnLLA0K7A3Ky2waCywNCuwOCstsGkssDUrLrEmARQrLbBqLLA1K7A2Ky2wayywNSuwNystsGwssDUrsDgrLbBtLCuwCGWwAyRQeLABFTAtAAAAS7gAyFJYsQEBjlm5CAAIAGMgsAEjRLADI3CyBCgJRVJEsgoCByqxBgFEsSQBiFFYsECIWLEGA0SxJgGIUVi4BACIWLEGAURZWVlZuAH/hbAEjbEFAEQAAA==") format("truetype");
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?47891540#fontello') format('svg');
+  }
+}
+*/
+/* line 25, ../scss/_fontello-embedded.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 55, ../scss/_fontello-embedded.scss */
+.icon-menu:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 56, ../scss/_fontello-embedded.scss */
+.icon-codepen:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 57, ../scss/_fontello-embedded.scss */
+.icon-twitter-bird:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 58, ../scss/_fontello-embedded.scss */
+.icon-down-open:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 59, ../scss/_fontello-embedded.scss */
+.icon-up-open:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 60, ../scss/_fontello-embedded.scss */
+.icon-mail-alt:before {
+  content: '\e805';
+}
+
+/* '' */
+/* line 61, ../scss/_fontello-embedded.scss */
+.icon-quote-left:before {
+  content: '\e806';
+}
+
+/* '' */
+/* line 62, ../scss/_fontello-embedded.scss */
+.icon-quote-right:before {
+  content: '\e807';
+}
+
+/* '' */
+/* line 63, ../scss/_fontello-embedded.scss */
+.icon-linkedin-rect:before {
+  content: '\e808';
+}
+
+/* '' */
+/* line 64, ../scss/_fontello-embedded.scss */
+.icon-left-open:before {
+  content: '\e809';
+}
+
+/* '' */
+/* line 65, ../scss/_fontello-embedded.scss */
+.icon-right-open:before {
+  content: '\e80a';
+}
+
+/* '' */
+/* line 66, ../scss/_fontello-embedded.scss */
+.icon-comment:before {
+  content: '\e80b';
+}
+
+/* '' */
+/*
+ *  Color Variables
+ */
+/*
+ *  Image Urls
+ */
+/*
+ *  General styles that I always add
+ */
+/* line 36, ../scss/pre_styles.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/* line 39, ../scss/pre_styles.scss */
+*::selection, *:before::selection, *:after::selection {
+  background-color: rgba(248, 160, 106, 0.8);
+}
+
+/* line 44, ../scss/pre_styles.scss */
+html, body, .container {
+  font-family: Roboto, Helvetica, Arial, 'sans-serif';
+  background-color: #ecf0f1;
+  color: #333333;
+}
+
+/* line 50, ../scss/pre_styles.scss */
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/*
+ *  utility styles
+ */
+/* line 59, ../scss/pre_styles.scss */
+.left, .fold .top .name .nav-toggle {
+  text-align: left !important;
+  transition: 0.5s ease;
+}
+
+/* line 65, ../scss/pre_styles.scss */
+.center, .scroll, .section-title, .content .social {
+  text-align: center !important;
+  transition: 0.5s ease;
+}
+
+/* line 71, ../scss/pre_styles.scss */
+.right {
+  text-align: right !important;
+  transition: 0.5s ease;
+}
+
+/* line 77, ../scss/pre_styles.scss */
+.highlight, .link {
+  padding: 5px;
+  background-color: #dde4e6;
+}
+
+/* line 82, ../scss/pre_styles.scss */
+.link {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 85, ../scss/pre_styles.scss */
+.link:hover {
+  background-color: #cfd9db;
+}
+
+/* line 90, ../scss/pre_styles.scss */
+.ghost {
+  height: 50px;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 0 15px;
+  transition: 0.2s ease;
+}
+/* line 98, ../scss/pre_styles.scss */
+.ghost.link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 50px;
+}
+/* line 106, ../scss/pre_styles.scss */
+.ghost:hover {
+  background-color: #333333;
+  color: #ecf0f1;
+  transition: 0.2s ease;
+}
+/* line 113, ../scss/pre_styles.scss */
+.ghost:focus {
+  outline-color: #fcc68e;
+}
+@media screen and (max-width: 768px) {
+  /* line 90, ../scss/pre_styles.scss */
+  .ghost {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 124, ../scss/pre_styles.scss */
+.card {
+  display: inline-block;
+  width: 250px;
+  overflow: hidden;
+  background-color: #dde4e6;
+  border-radius: 2px;
+  min-width: 150px;
+  max-width: 350px;
+}
+/* line 134, ../scss/pre_styles.scss */
+.card:hover {
+  cursor: pointer;
+  background-color: #cfd9db;
+}
+/* line 143, ../scss/pre_styles.scss */
+.card .descr {
+  padding: 15px;
+}
+
+/* line 148, ../scss/pre_styles.scss */
+.scroll {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+}
+/* line 155, ../scss/pre_styles.scss */
+.scroll .icon {
+  font-size: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+/* line 162, ../scss/pre_styles.scss */
+.scroll .icon:hover {
+  background-color: #333333;
+  color: #ecf0f1;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* line 172, ../scss/pre_styles.scss */
+.lazy {
+  display: none;
+}
+
+/* line 176, ../scss/pre_styles.scss */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* line 180, ../scss/pre_styles.scss */
+.section-title {
+  width: 100%;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+/*
+ *  blaketarter.com styles
+ */
+/* line 191, ../scss/pre_styles.scss */
+.fold {
+  height: 100%;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #333333;
+  overflow: hidden;
+}
+/* line 201, ../scss/pre_styles.scss */
+.fold .logo {
+  background: url("../img/poly.png") no-repeat center center;
+  -webkit-background-size: 60%;
+  -moz-background-size: 60%;
+  -o-background-size: 60%;
+  background-size: 60%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+/* line 214, ../scss/pre_styles.scss */
+.fold .top {
+  margin: 35% auto;
+  text-align: center;
+  width: 60%;
+  color: #333333;
+  position: relative;
+  display: none;
+}
+/* line 227, ../scss/pre_styles.scss */
+.fold .top .name {
+  font-size: 6.5em;
+  letter-spacing: 1.5;
+  font-weight: 300;
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 0;
+  z-index: 5;
+  transition: 0.2s ease;
+}
+/* line 238, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333333;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  font-size: 25px;
+  top: 5px;
+  left: 15px;
+  line-height: 50px;
+  padding-left: 7px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+/* line 255, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle:hover {
+  cursor: pointer;
+  background-color: #ecf0f1;
+  transition: 0.2s ease;
+}
+/* line 262, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle .nav-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: -15px;
+}
+/* line 267, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle .nav-list .nav-item {
+  padding-left: 15px;
+}
+/* line 270, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle .nav-list .nav-item.selected {
+  background-color: #dde4e6;
+}
+/* line 274, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle .nav-list .nav-item:hover {
+  cursor: pointer;
+  background-color: #ecf0f1;
+}
+/* line 281, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle.out {
+  height: 400px;
+  width: 200px;
+  background-color: white;
+  transition: 0.2s ease;
+}
+/* line 289, ../scss/pre_styles.scss */
+.fold .top .name .nav-toggle.out:hover {
+  cursor: initial;
+  background-color: white;
+}
+/* line 296, ../scss/pre_styles.scss */
+.fold .top .name.sticky {
+  font-size: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0 !important;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s ease;
+}
+/* line 307, ../scss/pre_styles.scss */
+.fold .top .name.sticky .nav-toggle {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  /* line 313, ../scss/pre_styles.scss */
+  .fold .top .name.sticky {
+    background-color: white;
+  }
+}
+/* line 319, ../scss/pre_styles.scss */
+.fold .top .subhead {
+  font-size: 4.5em;
+  font-weight: 300;
+  margin-top: 0;
+}
+/* line 324, ../scss/pre_styles.scss */
+.fold .top .subhead .amp {
+  font-weight: 700;
+}
+/* line 329, ../scss/pre_styles.scss */
+.fold .top .desc {
+  margin: 0 auto;
+  font-size: 3em;
+  font-weight: 200;
+}
+/* line 335, ../scss/pre_styles.scss */
+.fold .top .button-group {
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  /* line 214, ../scss/pre_styles.scss */
+  .fold .top {
+    width: 95%;
+  }
+}
+
+@supports (width: 100vw) {
+  /* line 346, ../scss/pre_styles.scss */
+  .fold {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+/* line 352, ../scss/pre_styles.scss */
+.content {
+  height: 100%;
+  width: 100%;
+  background-color: #ecf0f1;
+  color: #333333;
+}
+/* line 361, ../scss/pre_styles.scss */
+.content .nl {
+  margin: 50px auto;
+  width: 60%;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.7;
+  position: relative;
+}
+/* line 369, ../scss/pre_styles.scss */
+.content .nl div.scroll {
+  bottom: -115px;
+}
+@media screen and (max-width: 768px) {
+  /* line 369, ../scss/pre_styles.scss */
+  .content .nl div.scroll {
+    bottom: -50px;
+  }
+}
+/* line 377, ../scss/pre_styles.scss */
+.content .nl span.scroll {
+  display: inline;
+  position: relative;
+  width: auto;
+  bottom: 0;
+}
+/* line 383, ../scss/pre_styles.scss */
+.content .nl span.scroll:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  /* line 361, ../scss/pre_styles.scss */
+  .content .nl {
+    width: 90%;
+    font-size: 1.5em !important;
+  }
+}
+/* line 394, ../scss/pre_styles.scss */
+.content .examples {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+/* line 402, ../scss/pre_styles.scss */
+.content .examples .card {
+  flex: 1;
+  margin: 15px;
+}
+/* line 406, ../scss/pre_styles.scss */
+.content .examples .card .thumb {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  /* line 394, ../scss/pre_styles.scss */
+  .content .examples {
+    width: 95%;
+  }
+}
+/* line 417, ../scss/pre_styles.scss */
+.content .social {
+  margin: 100px auto;
+}
+/* line 421, ../scss/pre_styles.scss */
+.content .social .icon {
+  font-size: 3.5em;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 426, ../scss/pre_styles.scss */
+.content .social .icon:hover {
+  color: #384f5f;
+  cursor: pointer;
+}
+
+/*
+ *  Contact Form
+ */
+/* line 438, ../scss/pre_styles.scss */
+.contact-form {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ecf0f1;
+  transform: translateX(9999px);
+  transition: 1s ease;
+}
+/* line 453, ../scss/pre_styles.scss */
+.contact-form.active {
+  z-index: 10;
+  transform: translateX(0px);
+}
+
+/*
+ *  featherlight styles
+ */
+/* line 464, ../scss/pre_styles.scss */
+.lightbox {
+  display: none;
+}
+
+/* line 468, ../scss/pre_styles.scss */
+.featherlight {
+  z-index: 6;
+  padding-top: 75px;
+}
+/* line 471, ../scss/pre_styles.scss */
+.featherlight .featherlight-content {
+  width: 80%;
+  max-width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 471, ../scss/pre_styles.scss */
+  .featherlight .featherlight-content {
+    padding: 0;
+    border: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  /* line 471, ../scss/pre_styles.scss */
+  .featherlight .featherlight-content {
+    width: 95%;
+  }
+}
+
+/*
+ *  Overwrites and stuff
+ */
+@media screen and (max-width: 800px) {
+  /* line 491, ../scss/pre_styles.scss */
+  .name {
+    font-size: 3.5em !important;
+  }
+
+  /* line 495, ../scss/pre_styles.scss */
+  .subhead, .desc {
+    font-size: 2.5em !important;
+  }
+
+  /* line 499, ../scss/pre_styles.scss */
+  .nl {
+    font-size: 2em !important;
+  }
+}
+/* line 505, ../scss/pre_styles.scss */
+body.wip:before {
+  content: 'Coming Soon';
+  background-color: #ecf0f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 200px;
+  z-index: 1000;
+  font-size: 3em;
+}
+
+/* line 520, ../scss/pre_styles.scss */
+.test-class {
+  display: none;
+}

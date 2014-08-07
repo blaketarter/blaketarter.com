@@ -1,0 +1,133 @@
+/* line 1, ../scss/gf.scss */
+.container {
+  background-color: #ed7669;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 9, ../scss/gf.scss */
+.center {
+  transform: translateY(-50%);
+}
+
+/* line 13, ../scss/gf.scss */
+.hidden {
+  display: none;
+}
+
+/* line 17, ../scss/gf.scss */
+.row {
+  width: 100%;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: #ea6153;
+}
+/* line 24, ../scss/gf.scss */
+.row.no-style {
+  border: 0;
+  border-radius: 0px;
+  margin: 0;
+  background-color: transparent;
+}
+
+/* line 32, ../scss/gf.scss */
+.jumbo {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  padding-top: 50%;
+}
+/* line 40, ../scss/gf.scss */
+.jumbo .title {
+  margin-top: 0;
+  font-size: 4em;
+}
+/* line 45, ../scss/gf.scss */
+.jumbo .sub {
+  font-size: 3em;
+  margin-top: 0;
+}
+/* line 51, ../scss/gf.scss */
+.jumbo .scroll .icon:hover {
+  color: #ed7669;
+}
+
+/* line 58, ../scss/gf.scss */
+.tweet {
+  min-height: 100vh;
+  width: 80%;
+  color: #333333;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 50px;
+}
+/* line 68, ../scss/gf.scss */
+.tweet .funny {
+  font-size: 3em;
+  margin-top: 0;
+}
+/* line 73, ../scss/gf.scss */
+.tweet label {
+  font-size: 2em;
+  display: inline-block;
+  margin: 15px;
+}
+/* line 80, ../scss/gf.scss */
+.tweet input {
+  height: 50px;
+  border: 0;
+  background-color: #e74c3c;
+  width: 50%;
+  display: inline-block;
+  margin: 15px;
+  color: #333333;
+  font-size: 2em;
+}
+/* line 90, ../scss/gf.scss */
+.tweet input.error {
+  border: 2px solid #e43725;
+}
+/* line 95, ../scss/gf.scss */
+.tweet .submit, .tweet .tweeter {
+  width: 50%;
+  border: none;
+  background-color: #e74c3c;
+  margin: 0 auto;
+  height: 50px;
+}
+/* line 103, ../scss/gf.scss */
+.tweet .tweeter {
+  line-height: 50px;
+  display: block;
+  color: #333333;
+  text-decoration: none;
+}
+/* line 110, ../scss/gf.scss */
+.tweet .message {
+  font-size: 1.5em;
+}
+/* line 114, ../scss/gf.scss */
+.tweet .message-output {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 120, ../scss/gf.scss */
+  .tweet {
+    width: 95%;
+  }
+  /* line 123, ../scss/gf.scss */
+  .tweet input {
+    width: 90%;
+  }
+  /* line 127, ../scss/gf.scss */
+  .tweet .submit, .tweet .tweeter {
+    width: 90%;
+  }
+}
