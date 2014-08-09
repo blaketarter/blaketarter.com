@@ -3,8 +3,15 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		uglify: {
 			dist: {
-				src: 'dev/js/scripts.js',
-				dest: 'public/js/scripts.min.js'
+				options: {
+					compress: true,
+					mangle: true
+				},
+				// src: 'dev/js/scripts.js',
+				// dest: 'public/js/scripts.min.js'
+				files: {
+					'public/js/scripts.min.js': ['dev/js/scripts.js']
+				}
 			}
 		},
 		compass: {

@@ -96,4 +96,42 @@ $(document).ready(function() {
 //    if (is_mobile) {
 //        $('body').addClass('wip');
 //    }
+
+
+    var dom = {
+        nonUnique: [],
+        unique: [],
+        get: function() {
+            var items = document.getElementsByTagName("*");
+            var itemsLength = items.length;
+            for (var i = itemsLength; i--;) {
+                this.nonUnique.push(items[i].nodeName);
+                var nodeIndex = this.nonUnique.indexOf(items[i].nodeName);
+
+                console.log('index', nodeIndex);
+                console.log('increment', i);
+                console.log('length', itemsLength);
+                console.log('nonUnique', this.nonUnique);
+                console.log('unique', this.unique);
+
+                if (itemsLength - 1 === i) {
+                    this.unique.push({name: items[i].nodeName, count: 1});
+                }
+
+                if (0 > nodeIndex) {
+                    this.unique.push({name: items[i].nodeName, count: 1});
+                } else {
+
+                    this.unique[nodeIndex].count++;
+                }
+            }
+
+            console.log(this.nonUnique.length);
+            console.log(this.unique.length);
+
+            console.log(this.unique);
+        }
+    };
+
+    // dom.get();
 });
