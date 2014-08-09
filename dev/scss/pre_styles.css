@@ -701,6 +701,15 @@ body.no-scroll {
       .content .nl {
         width: 90%;
         font-size: 1.5em !important; } }
+    .content .nl .dom-list .dom-node {
+      list-style: none;
+      font-size: 20px;
+      display: inline-block;
+      width: 30%; }
+      .content .nl .dom-list .dom-node .node-name {
+        background-color: #dde4e6;
+        font-weight: bold;
+        padding: 5px; }
   .content .examples {
     display: flex;
     flex-wrap: wrap;
@@ -788,6 +797,3 @@ body.wip:before {
   line-height: 200px;
   z-index: 1000;
   font-size: 3em; }
-
-.test-class {
-  display: none; }

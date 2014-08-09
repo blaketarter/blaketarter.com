@@ -101,37 +101,44 @@ $(document).ready(function() {
     var dom = {
         nonUnique: [],
         unique: [],
-        get: function() {
+        get: function(callback) {
             var items = document.getElementsByTagName("*");
             var itemsLength = items.length;
+
             for (var i = itemsLength; i--;) {
                 this.nonUnique.push(items[i].nodeName);
-                var nodeIndex = this.nonUnique.indexOf(items[i].nodeName);
+            }
 
-                console.log('index', nodeIndex);
-                console.log('increment', i);
-                console.log('length', itemsLength);
-                console.log('nonUnique', this.nonUnique);
-                console.log('unique', this.unique);
+            var nonUniqueLength = this.nonUnique.length;
+            var uniqueLength = '';
+            var currentNode = '';
+            var match = false;
 
-                if (itemsLength - 1 === i) {
-                    this.unique.push({name: items[i].nodeName, count: 1});
+            for (var c = nonUniqueLength; c--;) {
+                match = false;
+                currentNode = this.nonUnique[c];
+                uniqueLength = this.unique.length;
+
+                for (var w = uniqueLength; w--;) {
+                    if (this.unique[w].name === currentNode) {
+                        this.unique[w].count++;
+                        match = true;
+                    }
                 }
 
-                if (0 > nodeIndex) {
-                    this.unique.push({name: items[i].nodeName, count: 1});
-                } else {
-
-                    this.unique[nodeIndex].count++;
+                if (!match) {
+                    this.unique.push({name: currentNode, count: 1});
                 }
             }
 
-            console.log(this.nonUnique.length);
-            console.log(this.unique.length);
-
-            console.log(this.unique);
+            return callback(this.unique);
         }
     };
 
-    // dom.get();
+    dom.get(function(unique) {
+        $.each(unique, function(index, node) {
+            $('.dom-list').append('<li class="dom-node"><span class="node-name">' + node.name + '</span>  <span class=""node-count">' + node.count + '</span></li>');
+        });
+        $('.script-count').text(unique[5].count - 10);
+    });
 });

@@ -389,6 +389,20 @@ body.no-scroll {
       width: 90%;
       font-size: 1.5em !important;
     }
+
+    .dom-list {
+      .dom-node {
+        list-style: none;
+        font-size: 20px;
+        display: inline-block;
+        width: 30%;
+        .node-name {
+          background-color: darken($white, 5%);
+          font-weight: bold;
+          padding: 5px;
+        }
+      }
+    }
   }
 
   .examples {
@@ -515,9 +529,4 @@ body.wip {
     z-index: 1000;
     font-size: 3em;
   }
-}
-
-.test-class {
-  display: none;
-
 }
