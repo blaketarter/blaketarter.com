@@ -23,6 +23,16 @@ $tan: #FCC68E;
 $orange: #F8A06A;
 
 /*
+ *  Image Background Colors
+ */
+
+$black: #000000;
+$red: #e74c3c;
+$green: #2ecc71;
+$pink: #EA2E49;
+
+
+/*
  *  Image Urls
  */
 
@@ -56,6 +66,14 @@ body {
  *  utility styles
  */
 
+%box-shadow {
+  box-shadow: 0 1px 8px 0 rgba(100, 100, 100, 0.2);
+
+  &:hover {
+    box-shadow: 0 1px 10px 0 rgba(100, 100, 100, 0.3);
+  }
+}
+
 .left {
   text-align: left !important;
 
@@ -77,6 +95,8 @@ body {
 .highlight, .link {
   padding: 5px;
   background-color: darken($white, 5%);
+
+  @extend %box-shadow;
 }
 
 .link {
@@ -143,6 +163,22 @@ body {
   .descr {
     padding: 15px;
   }
+}
+
+.black {
+  background-color: $black;
+}
+
+.red {
+  background-color: $red;
+}
+
+.green {
+  background-color: $green;
+}
+
+.pink {
+  background-color: $pink;
 }
 
 .scroll {
@@ -220,9 +256,11 @@ body.no-scroll {
 
     display: none;
 
-//    &.stuck {
-//      padding-top: 75px;
-//    }
+    &.stuck {
+      @media screen and (max-width: 768px) {
+        margin-top: 35% !important;
+      }
+    }
 
     .name {
       font-size: 6.5em;
@@ -300,7 +338,11 @@ body.no-scroll {
         left: 0;
         margin-top: 0 !important;
         width: 100%;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: $white;
+        height: 70px;
+        line-height: 70px;
+        border-bottom: 5px solid darken($white, 5%);
+        @extend %box-shadow;
 
         transition: 0.2s ease;
 
@@ -309,11 +351,11 @@ body.no-scroll {
         }
       }
       
-      @media screen and (max-width: 768px) {
-        &.sticky {
-          background-color: rgba(255, 255, 255, 1);
-        }
-      }
+//      @media screen and (max-width: 768px) {
+//        &.sticky {
+//          background-color: rgba(255, 255, 255, 1);
+//        }
+//      }
     }
 
     .subhead {
@@ -391,11 +433,17 @@ body.no-scroll {
     }
 
     .dom-list {
+      padding: 0;
       .dom-node {
         list-style: none;
         font-size: 20px;
         display: inline-block;
-        width: 30%;
+        width: 25%;
+
+        @media screen and (max-width: 768px) {
+          width: 45%;
+          margin: 2.5%;
+        }
         .node-name {
           background-color: darken($white, 5%);
           font-weight: bold;
@@ -404,18 +452,48 @@ body.no-scroll {
       }
     }
   }
+  
+//  FlexBox version
+//
+//  .examples {
+//    display: flex;
+//    flex-wrap: wrap;
+//    width: 60%;
+//    margin-left: auto;
+//    margin-right: auto;
+//    justify-content: center;
+//
+//    .card {
+//      flex: 1;
+//      margin: 15px;
+//
+//      .thumb {
+//        width: 100%;
+//        height: auto;
+//      }
+//    }
+//
+//    @media screen and (max-width: 768px) {
+//      width: 95%;
+//    }
+//  }
+
+// Inline Block Version
 
   .examples {
-    display: flex;
-    flex-wrap: wrap;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
 
     .card {
-      flex: 1;
-      margin: 15px;
+      display: inline-block;
+      margin: 1.5%;
+      width: 30%;
+      position: relative;
+      vertical-align: top;
+      @extend %box-shadow;
+
+      transition: 0.3s ease;
 
       .thumb {
         width: 100%;
@@ -423,8 +501,33 @@ body.no-scroll {
       }
     }
 
+    @media screen and (min-width: 1440px) {
+      .card {
+        width: 20%;
+        margin: 15px 2.5%;
+        max-width: initial;
+        max-height: initial;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .card {
+        width: 45%;
+        margin: 15px 2.5%;
+        max-width: initial;
+        max-height: initial;
+      }
+    }
+
     @media screen and (max-width: 768px) {
       width: 95%;
+
+      .card {
+        width: 65%;
+        margin: 15px 17.5%;
+        max-width: initial;
+        max-height: initial;
+      }
     }
   }
 

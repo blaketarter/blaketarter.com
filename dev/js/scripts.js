@@ -137,8 +137,7 @@ $(document).ready(function() {
 
     dom.get(function(unique) {
         $.each(unique, function(index, node) {
-            $('.dom-list').append('<li class="dom-node"><span class="node-name">' + node.name + '</span>  <span class=""node-count">' + node.count + '</span></li>');
+            $('.dom-list').append('<li class="dom-node"><span class="node-name highlight">' + '&lt;' + node.name + '&gt;' + '</span>  <span class=""node-count">' + node.count + '</span></li>');
         });
-        $('.script-count').text(unique[5].count - 10);
     });
 });

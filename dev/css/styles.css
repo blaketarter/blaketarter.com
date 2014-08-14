@@ -569,18 +569,21 @@ th {
  *  Color Variables
  */
 /*
+ *  Image Background Colors
+ */
+/*
  *  Image Urls
  */
 /*
  *  General styles that I always add
  */
-/* line 36, ../scss/pre_styles.scss */
+/* line 46, ../scss/pre_styles.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 39, ../scss/pre_styles.scss */
+/* line 49, ../scss/pre_styles.scss */
 *::-moz-selection, *:before::-moz-selection, *:after::-moz-selection {
   background-color: rgba(248, 160, 106, 0.8);
 }
@@ -588,14 +591,14 @@ th {
   background-color: rgba(248, 160, 106, 0.8);
 }
 
-/* line 44, ../scss/pre_styles.scss */
+/* line 54, ../scss/pre_styles.scss */
 html, body, .container {
   font-family: Roboto, Helvetica, Arial, 'sans-serif';
   background-color: #ecf0f1;
-  color: #333333;
+  color: black;
 }
 
-/* line 50, ../scss/pre_styles.scss */
+/* line 60, ../scss/pre_styles.scss */
 body {
   overflow-x: hidden;
   max-width: 100%;
@@ -604,80 +607,91 @@ body {
 /*
  *  utility styles
  */
-/* line 59, ../scss/pre_styles.scss */
+/* line 69, ../scss/pre_styles.scss */
+.highlight, .link, .fold .top .name.sticky, .content .examples .card {
+  -webkit-box-shadow: 0 1px 8px 0 rgba(100, 100, 100, 0.2);
+          box-shadow: 0 1px 8px 0 rgba(100, 100, 100, 0.2);
+}
+/* line 72, ../scss/pre_styles.scss */
+.highlight:hover, .link:hover, .fold .top .name.sticky:hover, .content .examples .card:hover {
+  -webkit-box-shadow: 0 1px 10px 0 rgba(100, 100, 100, 0.3);
+          box-shadow: 0 1px 10px 0 rgba(100, 100, 100, 0.3);
+}
+
+/* line 77, ../scss/pre_styles.scss */
 .left, .fold .top .name .nav-toggle {
   text-align: left !important;
   -webkit-transition: 0.5s ease;
           transition: 0.5s ease;
 }
 
-/* line 65, ../scss/pre_styles.scss */
+/* line 83, ../scss/pre_styles.scss */
 .center, .scroll, .section-title, .content .social {
   text-align: center !important;
   -webkit-transition: 0.5s ease;
           transition: 0.5s ease;
 }
 
-/* line 71, ../scss/pre_styles.scss */
+/* line 89, ../scss/pre_styles.scss */
 .right {
   text-align: right !important;
   -webkit-transition: 0.5s ease;
           transition: 0.5s ease;
 }
 
-/* line 77, ../scss/pre_styles.scss */
+/* line 95, ../scss/pre_styles.scss */
 .highlight, .link {
   padding: 5px;
   background-color: #dde4e6;
 }
 
-/* line 82, ../scss/pre_styles.scss */
+/* line 102, ../scss/pre_styles.scss */
 .link {
-  color: #333333;
+  color: black;
   text-decoration: none;
 }
-/* line 85, ../scss/pre_styles.scss */
+/* line 105, ../scss/pre_styles.scss */
 .link:hover {
   background-color: #cfd9db;
 }
 
-/* line 90, ../scss/pre_styles.scss */
+/* line 110, ../scss/pre_styles.scss */
 .ghost {
   height: 50px;
-  border: 1px solid #333333;
-  color: #333333;
+  border: 1px solid black;
+  color: black;
   background-color: transparent;
   border-radius: 2px;
   padding: 0 15px;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 98, ../scss/pre_styles.scss */
+/* line 118, ../scss/pre_styles.scss */
 .ghost.link {
   display: inline-block;
   text-decoration: none;
   line-height: 50px;
 }
-/* line 106, ../scss/pre_styles.scss */
+/* line 126, ../scss/pre_styles.scss */
 .ghost:hover {
-  background-color: #333333;
+  background-color: black;
   color: #ecf0f1;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 113, ../scss/pre_styles.scss */
+/* line 133, ../scss/pre_styles.scss */
 .ghost:focus {
   outline-color: #fcc68e;
 }
 @media screen and (max-width: 768px) {
-  /* line 90, ../scss/pre_styles.scss */
+  /* line 110, ../scss/pre_styles.scss */
   .ghost {
     width: 100%;
     margin-bottom: 15px;
   }
 }
 
-/* line 124, ../scss/pre_styles.scss */
+/* line 144, ../scss/pre_styles.scss */
 .card {
   display: inline-block;
   width: 250px;
@@ -687,24 +701,44 @@ body {
   min-width: 150px;
   max-width: 350px;
 }
-/* line 134, ../scss/pre_styles.scss */
+/* line 154, ../scss/pre_styles.scss */
 .card:hover {
   cursor: pointer;
   background-color: #cfd9db;
 }
-/* line 143, ../scss/pre_styles.scss */
+/* line 163, ../scss/pre_styles.scss */
 .card .descr {
   padding: 15px;
 }
 
-/* line 148, ../scss/pre_styles.scss */
+/* line 168, ../scss/pre_styles.scss */
+.black {
+  background-color: black;
+}
+
+/* line 172, ../scss/pre_styles.scss */
+.red {
+  background-color: #e74c3c;
+}
+
+/* line 176, ../scss/pre_styles.scss */
+.green {
+  background-color: #2ecc71;
+}
+
+/* line 180, ../scss/pre_styles.scss */
+.pink {
+  background-color: #ea2e49;
+}
+
+/* line 184, ../scss/pre_styles.scss */
 .scroll {
   position: absolute;
   bottom: 15px;
   left: 0;
   width: 100%;
 }
-/* line 155, ../scss/pre_styles.scss */
+/* line 191, ../scss/pre_styles.scss */
 .scroll .icon {
   font-size: 25px;
   background-color: transparent;
@@ -712,26 +746,26 @@ body {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 162, ../scss/pre_styles.scss */
+/* line 198, ../scss/pre_styles.scss */
 .scroll .icon:hover {
-  background-color: #333333;
+  background-color: black;
   color: #ecf0f1;
   cursor: pointer;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
 
-/* line 172, ../scss/pre_styles.scss */
+/* line 208, ../scss/pre_styles.scss */
 .lazy {
   display: none;
 }
 
-/* line 176, ../scss/pre_styles.scss */
+/* line 212, ../scss/pre_styles.scss */
 body.no-scroll {
   overflow: hidden;
 }
 
-/* line 180, ../scss/pre_styles.scss */
+/* line 216, ../scss/pre_styles.scss */
 .section-title {
   width: 100%;
   font-size: 3em;
@@ -741,15 +775,15 @@ body.no-scroll {
 /*
  *  blaketarter.com styles
  */
-/* line 191, ../scss/pre_styles.scss */
+/* line 227, ../scss/pre_styles.scss */
 .fold {
   height: 100%;
   width: 100%;
   background-color: #ecf0f1;
-  color: #333333;
+  color: black;
   overflow: hidden;
 }
-/* line 201, ../scss/pre_styles.scss */
+/* line 237, ../scss/pre_styles.scss */
 .fold .logo {
   background: url("../img/poly.png") no-repeat center center;
   background-size: 60%;
@@ -759,16 +793,22 @@ body.no-scroll {
   top: -100px;
   left: 0;
 }
-/* line 214, ../scss/pre_styles.scss */
+/* line 250, ../scss/pre_styles.scss */
 .fold .top {
   margin: 35% auto;
   text-align: center;
   width: 60%;
-  color: #333333;
+  color: black;
   position: relative;
   display: none;
 }
-/* line 227, ../scss/pre_styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 259, ../scss/pre_styles.scss */
+  .fold .top.stuck {
+    margin-top: 35% !important;
+  }
+}
+/* line 265, ../scss/pre_styles.scss */
 .fold .top .name {
   font-size: 6.5em;
   letter-spacing: 1.5;
@@ -780,11 +820,11 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 238, ../scss/pre_styles.scss */
+/* line 276, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle {
   display: none;
   background-color: rgba(255, 255, 255, 0.8);
-  color: #333333;
+  color: black;
   height: 50px;
   width: 50px;
   position: fixed;
@@ -797,33 +837,33 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 255, ../scss/pre_styles.scss */
+/* line 293, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle:hover {
   cursor: pointer;
   background-color: #ecf0f1;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 262, ../scss/pre_styles.scss */
+/* line 300, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list {
   list-style: none;
   padding-left: 0;
   margin-left: -15px;
 }
-/* line 267, ../scss/pre_styles.scss */
+/* line 305, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item {
   padding-left: 15px;
 }
-/* line 270, ../scss/pre_styles.scss */
+/* line 308, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item.selected {
   background-color: #dde4e6;
 }
-/* line 274, ../scss/pre_styles.scss */
+/* line 312, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item:hover {
   cursor: pointer;
   background-color: #ecf0f1;
 }
-/* line 281, ../scss/pre_styles.scss */
+/* line 319, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle.out {
   height: 400px;
   width: 200px;
@@ -831,12 +871,12 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 289, ../scss/pre_styles.scss */
+/* line 327, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle.out:hover {
   cursor: initial;
   background-color: white;
 }
-/* line 296, ../scss/pre_styles.scss */
+/* line 334, ../scss/pre_styles.scss */
 .fold .top .name.sticky {
   font-size: 45px;
   position: fixed;
@@ -844,62 +884,59 @@ body.no-scroll {
   left: 0;
   margin-top: 0 !important;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ecf0f1;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 5px solid #dde4e6;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 307, ../scss/pre_styles.scss */
+/* line 349, ../scss/pre_styles.scss */
 .fold .top .name.sticky .nav-toggle {
   display: block;
 }
-@media screen and (max-width: 768px) {
-  /* line 313, ../scss/pre_styles.scss */
-  .fold .top .name.sticky {
-    background-color: white;
-  }
-}
-/* line 319, ../scss/pre_styles.scss */
+/* line 361, ../scss/pre_styles.scss */
 .fold .top .subhead {
   font-size: 4.5em;
   font-weight: 300;
   margin-top: 0;
 }
-/* line 324, ../scss/pre_styles.scss */
+/* line 366, ../scss/pre_styles.scss */
 .fold .top .subhead .amp {
   font-weight: 700;
 }
-/* line 329, ../scss/pre_styles.scss */
+/* line 371, ../scss/pre_styles.scss */
 .fold .top .desc {
   margin: 0 auto;
   font-size: 3em;
   font-weight: 200;
 }
-/* line 335, ../scss/pre_styles.scss */
+/* line 377, ../scss/pre_styles.scss */
 .fold .top .button-group {
   margin-top: 50px;
 }
 @media screen and (max-width: 768px) {
-  /* line 214, ../scss/pre_styles.scss */
+  /* line 250, ../scss/pre_styles.scss */
   .fold .top {
     width: 95%;
   }
 }
 
 @supports (width: 100vw) {
-  /* line 346, ../scss/pre_styles.scss */
+  /* line 388, ../scss/pre_styles.scss */
   .fold {
     height: 100vh;
     width: 100vw;
   }
 }
-/* line 352, ../scss/pre_styles.scss */
+/* line 394, ../scss/pre_styles.scss */
 .content {
   height: 100%;
   width: 100%;
   background-color: #ecf0f1;
-  color: #333333;
+  color: black;
 }
-/* line 361, ../scss/pre_styles.scss */
+/* line 403, ../scss/pre_styles.scss */
 .content .nl {
   margin: 50px auto;
   width: 60%;
@@ -908,94 +945,121 @@ body.no-scroll {
   line-height: 1.7;
   position: relative;
 }
-/* line 369, ../scss/pre_styles.scss */
+/* line 411, ../scss/pre_styles.scss */
 .content .nl div.scroll {
   bottom: -115px;
 }
 @media screen and (max-width: 768px) {
-  /* line 369, ../scss/pre_styles.scss */
+  /* line 411, ../scss/pre_styles.scss */
   .content .nl div.scroll {
     bottom: -50px;
   }
 }
-/* line 377, ../scss/pre_styles.scss */
+/* line 419, ../scss/pre_styles.scss */
 .content .nl span.scroll {
   display: inline;
   position: relative;
   width: auto;
   bottom: 0;
 }
-/* line 383, ../scss/pre_styles.scss */
+/* line 425, ../scss/pre_styles.scss */
 .content .nl span.scroll:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  /* line 361, ../scss/pre_styles.scss */
+  /* line 403, ../scss/pre_styles.scss */
   .content .nl {
     width: 90%;
     font-size: 1.5em !important;
   }
 }
-/* line 394, ../scss/pre_styles.scss */
+/* line 435, ../scss/pre_styles.scss */
+.content .nl .dom-list {
+  padding: 0;
+}
+/* line 437, ../scss/pre_styles.scss */
 .content .nl .dom-list .dom-node {
   list-style: none;
   font-size: 20px;
   display: inline-block;
-  width: 30%;
+  width: 25%;
 }
-/* line 399, ../scss/pre_styles.scss */
+@media screen and (max-width: 768px) {
+  /* line 437, ../scss/pre_styles.scss */
+  .content .nl .dom-list .dom-node {
+    width: 45%;
+    margin: 2.5%;
+  }
+}
+/* line 447, ../scss/pre_styles.scss */
 .content .nl .dom-list .dom-node .node-name {
   background-color: #dde4e6;
   font-weight: bold;
   padding: 5px;
 }
-/* line 408, ../scss/pre_styles.scss */
+/* line 483, ../scss/pre_styles.scss */
 .content .examples {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-/* line 416, ../scss/pre_styles.scss */
+/* line 488, ../scss/pre_styles.scss */
 .content .examples .card {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 15px;
+  display: inline-block;
+  margin: 1.5%;
+  width: 30%;
+  position: relative;
+  vertical-align: top;
+  -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
 }
-/* line 420, ../scss/pre_styles.scss */
+/* line 498, ../scss/pre_styles.scss */
 .content .examples .card .thumb {
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 1440px) {
+  /* line 505, ../scss/pre_styles.scss */
+  .content .examples .card {
+    width: 20%;
+    margin: 15px 2.5%;
+    max-width: initial;
+    max-height: initial;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* line 514, ../scss/pre_styles.scss */
+  .content .examples .card {
+    width: 45%;
+    margin: 15px 2.5%;
+    max-width: initial;
+    max-height: initial;
+  }
+}
 @media screen and (max-width: 768px) {
-  /* line 408, ../scss/pre_styles.scss */
+  /* line 483, ../scss/pre_styles.scss */
   .content .examples {
     width: 95%;
   }
+  /* line 525, ../scss/pre_styles.scss */
+  .content .examples .card {
+    width: 65%;
+    margin: 15px 17.5%;
+    max-width: initial;
+    max-height: initial;
+  }
 }
-/* line 431, ../scss/pre_styles.scss */
+/* line 534, ../scss/pre_styles.scss */
 .content .social {
   margin: 100px auto;
 }
-/* line 435, ../scss/pre_styles.scss */
+/* line 538, ../scss/pre_styles.scss */
 .content .social .icon {
   font-size: 3.5em;
-  color: #333333;
+  color: black;
   text-decoration: none;
 }
-/* line 440, ../scss/pre_styles.scss */
+/* line 543, ../scss/pre_styles.scss */
 .content .social .icon:hover {
   color: #384f5f;
   cursor: pointer;
@@ -1004,7 +1068,7 @@ body.no-scroll {
 /*
  *  Contact Form
  */
-/* line 452, ../scss/pre_styles.scss */
+/* line 555, ../scss/pre_styles.scss */
 .contact-form {
   position: fixed;
   height: 100%;
@@ -1019,7 +1083,7 @@ body.no-scroll {
   -webkit-transition: 1s ease;
           transition: 1s ease;
 }
-/* line 467, ../scss/pre_styles.scss */
+/* line 570, ../scss/pre_styles.scss */
 .contact-form.active {
   z-index: 10;
   -webkit-transform: translateX(0px);
@@ -1030,30 +1094,30 @@ body.no-scroll {
 /*
  *  featherlight styles
  */
-/* line 478, ../scss/pre_styles.scss */
+/* line 581, ../scss/pre_styles.scss */
 .lightbox {
   display: none;
 }
 
-/* line 482, ../scss/pre_styles.scss */
+/* line 585, ../scss/pre_styles.scss */
 .featherlight {
   z-index: 6;
   padding-top: 75px;
 }
-/* line 485, ../scss/pre_styles.scss */
+/* line 588, ../scss/pre_styles.scss */
 .featherlight .featherlight-content {
   width: 80%;
   max-width: 1024px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 485, ../scss/pre_styles.scss */
+  /* line 588, ../scss/pre_styles.scss */
   .featherlight .featherlight-content {
     padding: 0;
     border: 0;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 485, ../scss/pre_styles.scss */
+  /* line 588, ../scss/pre_styles.scss */
   .featherlight .featherlight-content {
     width: 95%;
   }
@@ -1063,22 +1127,22 @@ body.no-scroll {
  *  Overwrites and stuff
  */
 @media screen and (max-width: 800px) {
-  /* line 505, ../scss/pre_styles.scss */
+  /* line 608, ../scss/pre_styles.scss */
   .name {
     font-size: 3.5em !important;
   }
 
-  /* line 509, ../scss/pre_styles.scss */
+  /* line 612, ../scss/pre_styles.scss */
   .subhead, .desc {
     font-size: 2.5em !important;
   }
 
-  /* line 513, ../scss/pre_styles.scss */
+  /* line 616, ../scss/pre_styles.scss */
   .nl {
     font-size: 2em !important;
   }
 }
-/* line 519, ../scss/pre_styles.scss */
+/* line 622, ../scss/pre_styles.scss */
 body.wip:before {
   content: 'Coming Soon';
   background-color: #ecf0f1;
