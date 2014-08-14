@@ -203,6 +203,10 @@ body {
       transition: 0.2s ease;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .lazy {
@@ -452,7 +456,7 @@ body.no-scroll {
       }
     }
   }
-  
+
 //  FlexBox version
 //
 //  .examples {

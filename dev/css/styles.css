@@ -754,18 +754,24 @@ body {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
+@media screen and (max-width: 768px) {
+  /* line 184, ../scss/pre_styles.scss */
+  .scroll {
+    display: none;
+  }
+}
 
-/* line 208, ../scss/pre_styles.scss */
+/* line 212, ../scss/pre_styles.scss */
 .lazy {
   display: none;
 }
 
-/* line 212, ../scss/pre_styles.scss */
+/* line 216, ../scss/pre_styles.scss */
 body.no-scroll {
   overflow: hidden;
 }
 
-/* line 216, ../scss/pre_styles.scss */
+/* line 220, ../scss/pre_styles.scss */
 .section-title {
   width: 100%;
   font-size: 3em;
@@ -775,7 +781,7 @@ body.no-scroll {
 /*
  *  blaketarter.com styles
  */
-/* line 227, ../scss/pre_styles.scss */
+/* line 231, ../scss/pre_styles.scss */
 .fold {
   height: 100%;
   width: 100%;
@@ -783,7 +789,7 @@ body.no-scroll {
   color: black;
   overflow: hidden;
 }
-/* line 237, ../scss/pre_styles.scss */
+/* line 241, ../scss/pre_styles.scss */
 .fold .logo {
   background: url("../img/poly.png") no-repeat center center;
   background-size: 60%;
@@ -793,7 +799,7 @@ body.no-scroll {
   top: -100px;
   left: 0;
 }
-/* line 250, ../scss/pre_styles.scss */
+/* line 254, ../scss/pre_styles.scss */
 .fold .top {
   margin: 35% auto;
   text-align: center;
@@ -803,12 +809,12 @@ body.no-scroll {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  /* line 259, ../scss/pre_styles.scss */
+  /* line 263, ../scss/pre_styles.scss */
   .fold .top.stuck {
     margin-top: 35% !important;
   }
 }
-/* line 265, ../scss/pre_styles.scss */
+/* line 269, ../scss/pre_styles.scss */
 .fold .top .name {
   font-size: 6.5em;
   letter-spacing: 1.5;
@@ -820,7 +826,7 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 276, ../scss/pre_styles.scss */
+/* line 280, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle {
   display: none;
   background-color: rgba(255, 255, 255, 0.8);
@@ -837,33 +843,33 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 293, ../scss/pre_styles.scss */
+/* line 297, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle:hover {
   cursor: pointer;
   background-color: #ecf0f1;
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 300, ../scss/pre_styles.scss */
+/* line 304, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list {
   list-style: none;
   padding-left: 0;
   margin-left: -15px;
 }
-/* line 305, ../scss/pre_styles.scss */
+/* line 309, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item {
   padding-left: 15px;
 }
-/* line 308, ../scss/pre_styles.scss */
+/* line 312, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item.selected {
   background-color: #dde4e6;
 }
-/* line 312, ../scss/pre_styles.scss */
+/* line 316, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle .nav-list .nav-item:hover {
   cursor: pointer;
   background-color: #ecf0f1;
 }
-/* line 319, ../scss/pre_styles.scss */
+/* line 323, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle.out {
   height: 400px;
   width: 200px;
@@ -871,12 +877,12 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 327, ../scss/pre_styles.scss */
+/* line 331, ../scss/pre_styles.scss */
 .fold .top .name .nav-toggle.out:hover {
   cursor: initial;
   background-color: white;
 }
-/* line 334, ../scss/pre_styles.scss */
+/* line 338, ../scss/pre_styles.scss */
 .fold .top .name.sticky {
   font-size: 45px;
   position: fixed;
@@ -891,52 +897,52 @@ body.no-scroll {
   -webkit-transition: 0.2s ease;
           transition: 0.2s ease;
 }
-/* line 349, ../scss/pre_styles.scss */
+/* line 353, ../scss/pre_styles.scss */
 .fold .top .name.sticky .nav-toggle {
   display: block;
 }
-/* line 361, ../scss/pre_styles.scss */
+/* line 365, ../scss/pre_styles.scss */
 .fold .top .subhead {
   font-size: 4.5em;
   font-weight: 300;
   margin-top: 0;
 }
-/* line 366, ../scss/pre_styles.scss */
+/* line 370, ../scss/pre_styles.scss */
 .fold .top .subhead .amp {
   font-weight: 700;
 }
-/* line 371, ../scss/pre_styles.scss */
+/* line 375, ../scss/pre_styles.scss */
 .fold .top .desc {
   margin: 0 auto;
   font-size: 3em;
   font-weight: 200;
 }
-/* line 377, ../scss/pre_styles.scss */
+/* line 381, ../scss/pre_styles.scss */
 .fold .top .button-group {
   margin-top: 50px;
 }
 @media screen and (max-width: 768px) {
-  /* line 250, ../scss/pre_styles.scss */
+  /* line 254, ../scss/pre_styles.scss */
   .fold .top {
     width: 95%;
   }
 }
 
 @supports (width: 100vw) {
-  /* line 388, ../scss/pre_styles.scss */
+  /* line 392, ../scss/pre_styles.scss */
   .fold {
     height: 100vh;
     width: 100vw;
   }
 }
-/* line 394, ../scss/pre_styles.scss */
+/* line 398, ../scss/pre_styles.scss */
 .content {
   height: 100%;
   width: 100%;
   background-color: #ecf0f1;
   color: black;
 }
-/* line 403, ../scss/pre_styles.scss */
+/* line 407, ../scss/pre_styles.scss */
 .content .nl {
   margin: 50px auto;
   width: 60%;
@@ -945,39 +951,39 @@ body.no-scroll {
   line-height: 1.7;
   position: relative;
 }
-/* line 411, ../scss/pre_styles.scss */
+/* line 415, ../scss/pre_styles.scss */
 .content .nl div.scroll {
   bottom: -115px;
 }
 @media screen and (max-width: 768px) {
-  /* line 411, ../scss/pre_styles.scss */
+  /* line 415, ../scss/pre_styles.scss */
   .content .nl div.scroll {
     bottom: -50px;
   }
 }
-/* line 419, ../scss/pre_styles.scss */
+/* line 423, ../scss/pre_styles.scss */
 .content .nl span.scroll {
   display: inline;
   position: relative;
   width: auto;
   bottom: 0;
 }
-/* line 425, ../scss/pre_styles.scss */
+/* line 429, ../scss/pre_styles.scss */
 .content .nl span.scroll:hover {
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  /* line 403, ../scss/pre_styles.scss */
+  /* line 407, ../scss/pre_styles.scss */
   .content .nl {
     width: 90%;
     font-size: 1.5em !important;
   }
 }
-/* line 435, ../scss/pre_styles.scss */
+/* line 439, ../scss/pre_styles.scss */
 .content .nl .dom-list {
   padding: 0;
 }
-/* line 437, ../scss/pre_styles.scss */
+/* line 441, ../scss/pre_styles.scss */
 .content .nl .dom-list .dom-node {
   list-style: none;
   font-size: 20px;
@@ -985,25 +991,25 @@ body.no-scroll {
   width: 25%;
 }
 @media screen and (max-width: 768px) {
-  /* line 437, ../scss/pre_styles.scss */
+  /* line 441, ../scss/pre_styles.scss */
   .content .nl .dom-list .dom-node {
     width: 45%;
     margin: 2.5%;
   }
 }
-/* line 447, ../scss/pre_styles.scss */
+/* line 451, ../scss/pre_styles.scss */
 .content .nl .dom-list .dom-node .node-name {
   background-color: #dde4e6;
   font-weight: bold;
   padding: 5px;
 }
-/* line 483, ../scss/pre_styles.scss */
+/* line 487, ../scss/pre_styles.scss */
 .content .examples {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 488, ../scss/pre_styles.scss */
+/* line 492, ../scss/pre_styles.scss */
 .content .examples .card {
   display: inline-block;
   margin: 1.5%;
@@ -1013,13 +1019,13 @@ body.no-scroll {
   -webkit-transition: 0.3s ease;
           transition: 0.3s ease;
 }
-/* line 498, ../scss/pre_styles.scss */
+/* line 502, ../scss/pre_styles.scss */
 .content .examples .card .thumb {
   width: 100%;
   height: auto;
 }
 @media screen and (min-width: 1440px) {
-  /* line 505, ../scss/pre_styles.scss */
+  /* line 509, ../scss/pre_styles.scss */
   .content .examples .card {
     width: 20%;
     margin: 15px 2.5%;
@@ -1028,7 +1034,7 @@ body.no-scroll {
   }
 }
 @media screen and (max-width: 1024px) {
-  /* line 514, ../scss/pre_styles.scss */
+  /* line 518, ../scss/pre_styles.scss */
   .content .examples .card {
     width: 45%;
     margin: 15px 2.5%;
@@ -1037,11 +1043,11 @@ body.no-scroll {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 483, ../scss/pre_styles.scss */
+  /* line 487, ../scss/pre_styles.scss */
   .content .examples {
     width: 95%;
   }
-  /* line 525, ../scss/pre_styles.scss */
+  /* line 529, ../scss/pre_styles.scss */
   .content .examples .card {
     width: 65%;
     margin: 15px 17.5%;
@@ -1049,17 +1055,17 @@ body.no-scroll {
     max-height: initial;
   }
 }
-/* line 534, ../scss/pre_styles.scss */
+/* line 538, ../scss/pre_styles.scss */
 .content .social {
   margin: 100px auto;
 }
-/* line 538, ../scss/pre_styles.scss */
+/* line 542, ../scss/pre_styles.scss */
 .content .social .icon {
   font-size: 3.5em;
   color: black;
   text-decoration: none;
 }
-/* line 543, ../scss/pre_styles.scss */
+/* line 547, ../scss/pre_styles.scss */
 .content .social .icon:hover {
   color: #384f5f;
   cursor: pointer;
@@ -1068,7 +1074,7 @@ body.no-scroll {
 /*
  *  Contact Form
  */
-/* line 555, ../scss/pre_styles.scss */
+/* line 559, ../scss/pre_styles.scss */
 .contact-form {
   position: fixed;
   height: 100%;
@@ -1083,7 +1089,7 @@ body.no-scroll {
   -webkit-transition: 1s ease;
           transition: 1s ease;
 }
-/* line 570, ../scss/pre_styles.scss */
+/* line 574, ../scss/pre_styles.scss */
 .contact-form.active {
   z-index: 10;
   -webkit-transform: translateX(0px);
@@ -1094,30 +1100,30 @@ body.no-scroll {
 /*
  *  featherlight styles
  */
-/* line 581, ../scss/pre_styles.scss */
+/* line 585, ../scss/pre_styles.scss */
 .lightbox {
   display: none;
 }
 
-/* line 585, ../scss/pre_styles.scss */
+/* line 589, ../scss/pre_styles.scss */
 .featherlight {
   z-index: 6;
   padding-top: 75px;
 }
-/* line 588, ../scss/pre_styles.scss */
+/* line 592, ../scss/pre_styles.scss */
 .featherlight .featherlight-content {
   width: 80%;
   max-width: 1024px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 588, ../scss/pre_styles.scss */
+  /* line 592, ../scss/pre_styles.scss */
   .featherlight .featherlight-content {
     padding: 0;
     border: 0;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 588, ../scss/pre_styles.scss */
+  /* line 592, ../scss/pre_styles.scss */
   .featherlight .featherlight-content {
     width: 95%;
   }
@@ -1127,22 +1133,22 @@ body.no-scroll {
  *  Overwrites and stuff
  */
 @media screen and (max-width: 800px) {
-  /* line 608, ../scss/pre_styles.scss */
+  /* line 612, ../scss/pre_styles.scss */
   .name {
     font-size: 3.5em !important;
   }
 
-  /* line 612, ../scss/pre_styles.scss */
+  /* line 616, ../scss/pre_styles.scss */
   .subhead, .desc {
     font-size: 2.5em !important;
   }
 
-  /* line 616, ../scss/pre_styles.scss */
+  /* line 620, ../scss/pre_styles.scss */
   .nl {
     font-size: 2em !important;
   }
 }
-/* line 622, ../scss/pre_styles.scss */
+/* line 626, ../scss/pre_styles.scss */
 body.wip:before {
   content: 'Coming Soon';
   background-color: #ecf0f1;
